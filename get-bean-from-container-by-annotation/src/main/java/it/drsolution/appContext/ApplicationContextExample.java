@@ -3,6 +3,8 @@ package it.drsolution.appContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import it.drsolution.model.TestBean;
+
 public class ApplicationContextExample {
 
 	public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class ApplicationContextExample {
 		ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
 		TestBean testBean=(TestBean)context.getBean("testBean");
 		testBean.printYourMessage();
+		
 		
 	}
 
