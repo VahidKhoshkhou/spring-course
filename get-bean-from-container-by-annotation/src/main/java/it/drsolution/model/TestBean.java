@@ -9,6 +9,8 @@ public class TestBean {
 	public TestBean(String name, String message) {
 		this.name = name ;
 		this.message = message;
+
+		System.out.println("a bean has been created");
 	}
 
 	public TestBean(String message) {
@@ -18,6 +20,7 @@ public class TestBean {
 	
 	public String getName() {
 		return name;
+		
 	}
 
 	public void setName(String name) {
