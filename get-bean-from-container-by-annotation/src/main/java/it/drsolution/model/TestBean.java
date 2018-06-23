@@ -1,18 +1,35 @@
 package it.drsolution.model;
 
 public class TestBean {
-	
+	private String name;
 	private String message;
 
-	public TestBean(String mesage) {
-		this.message=message;
+	
+	
+	public TestBean(String name, String message) {
+		this.name = name ;
+		this.message = message;
 	}
 
-	public void printYourMessage() {
-		System.out.println(message);
-		
+	public TestBean(String message) {
+		this.name = "";
+		this.message=message;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	public void printYourMessage() {
+		System.out.println(name+" "+message);
+		
+	}
+
 
 }
 	
